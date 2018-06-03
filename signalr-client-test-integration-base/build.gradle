@@ -1,6 +1,7 @@
 apply plugin: 'java'
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':signalr-client-sdk')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':signalr-client-sdk')
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.3.1'
 }
